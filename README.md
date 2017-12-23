@@ -12,3 +12,26 @@ punto<br>
 documentadas (incluye el uso de una herramienta de benchmarking, o la
 implementación de scripts de prueba): 6 puntos<br>
 ○ EXTRAS: Hasta 5 puntos, dependiendo de lo implementado.<br>
+<br>
+Microservicio + Memcached
+<br>
+El DUMP de la database es gigante y no puedo pasarlo :'v <br>
+Para que funcione el microservicio de django se necesitan las siguientes dependencias. (Obviamente también instalado memcached)<br>
+python 3+<br>
+django-corsheaders (no me acuerdo si está bien escrito...)<br>
+django-memcached<br>
+python-memcached<br>
+<br>
+NO OLVIDAR CAMBIAR EL PASSWORD DE LA DATABASE EN SETTINGS.PY<br>
+La base de datos que creen debe llamarse newsfeed<br>
+<br>
+URLS<br>
+database + cache: localhost:8000<br>
+<br>
+only database: localhost:8000/justdatabase<br>
+<br>
+Si encuentran algún error, informar
+
+
+
+
