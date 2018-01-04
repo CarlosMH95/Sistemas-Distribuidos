@@ -30,12 +30,12 @@ database + cache: localhost:8000<br>
 <br>
 only database: localhost:8000/justdatabase<br>
 <br>
-gRPC pre requisitos<br>
+gRPC PRE REQUISITOS<br>
 gRPC Python is supported for use with Python 2.7 or Python 3.4 or higher<br>
 $ python -m pip install --upgrade pip<br>
 $ python -m pip install grpcio<br>
 $ python -m pip install grpcio-tools<br>
-From the examples/helloworld directory:<br>
+From the examples/helloworld directory:
 1. Run the server<br>
 $ python greeter_server.py<br>
 2. In another terminal, run the client<br>
