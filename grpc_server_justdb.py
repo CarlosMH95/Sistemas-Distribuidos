@@ -30,37 +30,21 @@ connection = pymysql.connect(host='localhost',
 
 class Microservice(microservice_pb2_grpc.MicroserviceServicer):
     def ListNews(self, request, context):
-        
-        fecha = datetime.now().date()
-        key = str(fecha.year) + str (fecha.month) + str (fecha.day)
-        value = mc.get(key)
-        if not value:
-            try:
-                with connection.cursor() as cursor:
-                    sql = "SELECT * FROM `news` ORDER BY `numero_accessos`  DESC LIMIT %s"
-                    cursor.execute(sql, (10,))
-                    result = cursor.fetchall()
-                    resultjson = json.dumps(result)
-                    mc.set(key, resultjson)
-                    resjson = json.loads(resultjson)
-                    for news in resjson:
-                        yield microservice_pb2.News(id=news['id'],title=news['title'],
+        try:
+            with connection.cursor() as cursor:
+                sql = "SELECT * FROM `news` ORDER BY `numero_accessos`  DESC LIMIT %s"
+                cursor.execute(sql, (10,))
+                result = cursor.fetchall()
+                resultjson = json.dumps(result)
+                resjson = json.loads(resultjson)
+                for news in resjson:
+                    yield microservice_pb2.News(id=news['id'],title=news['title'],
                                         url=news['url'],publisher=news['publisher'],
                                         category=news['category'],story=news['story'],
                                         hostname=news['hostname'],time_stamp=news['time_stamp'],
                                         numero_accessos=news['numero_accessos'])
-            finally:
-                print("DONE :3")
-        else:
-            print("HERE!!!")
-            resultjson = json.loads(value)
-            mc.flush_all()
-            for news in resultjson:
-                yield microservice_pb2.News(id=news['id'],title=news['title'],
-                                        url=news['url'],publisher=news['publisher'],
-                                        category=news['category'],story=news['story'],
-                                        hostname=news['hostname'],time_stamp=news['time_stamp'],
-                                        numero_accessos=news['numero_accessos'])
+        finally:
+            print("DONE :3")
 
 
 def serve():
