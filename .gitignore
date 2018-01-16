@@ -1,1 +1,4 @@
 .idea/
+microservice/microservice/settings.py
+grpc_server.py
+grpc_server_justdb.py
