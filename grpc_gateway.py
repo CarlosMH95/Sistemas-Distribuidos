@@ -21,8 +21,18 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header('Content-type','application/json')
             self.end_headers()
             self.wfile.write(jsonresp.encode())
-        else:
+        elif (self.path == '/justdb'):
+            channel = grpc.insecure_channel('localhost:50052')
+            stub = microservice_pb2_grpc.MicroserviceStub(channel)
+            for news in stub.ListNews(microservice_pb2.Numero(numero=10)):
+                dicti[news.id]=news.title
+            jsonresp = json.dumps(dicti)
             self.send_response(200)
+            self.send_header('Content-type','application/json')
+            self.end_headers()
+            self.wfile.write(jsonresp.encode())
+        else:
+            self.send_response(200) #cambiar esto luego
         
     
 

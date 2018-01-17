@@ -23,7 +23,7 @@ _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 mc = memcache.Client(['127.0.0.1:11211'], debug=0)
 connection = pymysql.connect(host='localhost',
                             user='root',
-                            password='Aisakataiga1',
+                            password='1234',
                             db='newsfeed',
                             charset='utf8mb4',
                             cursorclass=pymysql.cursors.DictCursor)
@@ -50,7 +50,7 @@ class Microservice(microservice_pb2_grpc.MicroserviceServicer):
 def serve():
     server =grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     microservice_pb2_grpc.add_MicroserviceServicer_to_server(Microservice(), server)
-    server.add_insecure_port('[::]:50051')
+    server.add_insecure_port('[::]:50052')
     server.start()
     try:
         while True:
