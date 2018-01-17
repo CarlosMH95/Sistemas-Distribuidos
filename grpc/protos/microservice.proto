@@ -4,8 +4,8 @@ syntax = "proto3";
 package microservice;
 
 service Microservice {
-	rpc ListNews(Numero) returns (stream News) {}
-	
+	rpc ListNews(Numero) returns (stream News) {
+	}	
 }
 
 message Numero {

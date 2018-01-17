@@ -23,7 +23,7 @@ _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 mc = memcache.Client(['127.0.0.1:11211'], debug=0)
 connection = pymysql.connect(host='localhost',
                             user='root',
-                            password='1234',
+                            password='Aisakataiga1',
                             db='newsfeed',
                             charset='utf8mb4',
                             cursorclass=pymysql.cursors.DictCursor)
