@@ -14,13 +14,12 @@ import requests
 import json
 import microservice_pb2
 import microservice_pb2_grpc
-import memcache
 import pymysql.cursors
 from datetime import datetime
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 
-mc = memcache.Client(['127.0.0.1:11211'], debug=0)
+
 connection = pymysql.connect(host='localhost',
                             user='root',
                             password='1234',
