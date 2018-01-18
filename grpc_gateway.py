@@ -25,7 +25,9 @@ class Handler(BaseHTTPRequestHandler):
             channel = grpc.insecure_channel('localhost:50052')
             stub = microservice_pb2_grpc.MicroserviceStub(channel)
             for news in stub.ListNews(microservice_pb2.Numero(numero=10)):
-                dicti[news.id]=news.title
+                dicti["id"] = news.id
+                dicti["title"] = news.title
+                dicti["story"] = news.story
             jsonresp = json.dumps(dicti)
             self.send_response(200)
             self.send_header('Content-type','application/json')

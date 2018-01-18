@@ -1,0 +1,6 @@
+grpcio
+django
+grpcio-tools
+python-memcached
+PyMySQL
+
