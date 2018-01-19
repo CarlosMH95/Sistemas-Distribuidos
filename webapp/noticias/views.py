@@ -16,3 +16,14 @@ def mostrar10(request):
 		lista.append((k,v))
 	print(lista)
 	return render(request, template, {'noticias': lista })
+
+def mostrar10db(request):
+	template = 'noticias/10mejores.html'
+	result = r.get('http://localhost:9000/justdb')
+	noticias = result.json()
+	print (noticias)
+	lista=[]
+	for k, v in noticias.items():
+		lista.append((k,v))
+	print(lista)
+	return render(request, template, {'noticias': lista })
