@@ -21,8 +21,8 @@ _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 
 
 connection = pymysql.connect(host='localhost',
-                            user='carlos',
-                            password='1234',
+                            user='root',
+                            password='',
                             db='newsfeed',
                             charset='utf8mb4',
                             cursorclass=pymysql.cursors.DictCursor)
