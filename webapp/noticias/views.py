@@ -11,4 +11,8 @@ def mostrar10(request):
 	result = r.get('http://localhost:9000')
 	noticias = result.json()
 	print (noticias)
-	return render(request, template, noticias)
+	lista=[]
+	for k, v in noticias.items():
+		lista.append((k,v))
+	print(lista)
+	return render(request, template, {'noticias': lista })

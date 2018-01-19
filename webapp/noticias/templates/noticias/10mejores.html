@@ -1,13 +1,17 @@
 {% extends "noticias/index.html" %}
 {% block content %}
-	{% for n in noticias %}
+	{% for k, v in noticias %}
 		<div class="row justify-content-md-center">
 		    <div class="col col-lg-2">
 		    </div>
-		    <div class="col-12 col-md-auto">
-		      <h1>{{ n.title }}<h1>
+		    <div class="col-12 col-md-center">
+		      <h1>{{ k }}</h1>
+		      <hr>
 		      <br/>
-		      <p>{{ n.story }}<p>
+		      <p><a href="{{v}}">{{ v }}<a><p>
+		      <hr>
+		      <br/>
+		      <br/>
 		    </div>
 		    <div class="col col-lg-2">
 		    </div>

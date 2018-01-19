@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
     <meta charset="UTF-8">
     <title>Noticias</title>
+    <style>
+        h1 {
+            text-align: center;
+            }
+    </style>
 
 </head>
 <body>
@@ -35,14 +40,22 @@
         </div>
     </nav>
     <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Noticias Noticias Noticias</h1>
-        </div>
+    <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+            </div>
+            <div class="col-12 col-md-center">
+             <div class="jumbotron">
+                <h1>Noticias Noticias Noticias</h1>
+            </div>
+            </div>
+            <div class="col col-lg-2">
+            </div>
     </div>
+    <div class="row">
         {% block content %}
 
         {% endblock %}
+        </div>
     </div>
 </body>
 </html>
