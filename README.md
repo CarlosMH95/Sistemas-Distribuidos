@@ -54,6 +54,9 @@ ANTES DE COMENZAR<br>
 ○ virtualenv -p python3 /tmp/djangodev
 ○ . /tmp/djangodev/bin/activate
 ○ Usar el comando deactivate en caso que deseen salir del virtualenv
+EN LA INSTANCIA WEBAPP<br>
+○ Ubicarse en el directorio webapp
+○ python manage.py runserver 172.31.34.84:8000
 
 
 
