@@ -57,6 +57,12 @@ ANTES DE COMENZAR<br>
 EN LA INSTANCIA WEBAPP<br>
 ○ Ubicarse en el directorio webapp
 ○ python manage.py runserver 172.31.34.84:8000
+SOBRE LAS INSTANCIAS<br>
+○ django-webapp <aplicación web>
+○ django-gateway <reverse proxy>
+○ django-microservice <microservicio db>
+○ django-memcached <microservicio con memcached>
+○ django-db <base de datos>
 
 
 
