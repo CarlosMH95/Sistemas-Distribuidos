@@ -1,0 +1,46 @@
+----------AWS Deployment-----------
+User: DISTRIB03
+-----------------------------------
+sudo apt-get update
+sudo apt-get install virtualenv
+-----------------------------------
+virtualenv -p python3 /tmp/djangodev
+. /tmp/djangodev/bin/activate
+pip install django
+pip install django-memcached
+pip install django-cors-headers
+pip install django-bootstrap-themes
+pip install requests
+pip install grpcio
+pip install grpcio-tools
+pip install protobuf
+pip install python-memcached
+-----------------------------------
+deactivate
+-----------------------------------
+sudo apt-get install mysql-server
+sudo apt-get install libmysqlclient-dev
+sudo apt-get install python3-pip
+sudo pip3 install mysqlclient
+-----------------------------------
+. /tmp/djangodev/bin/activate
+pip install pymysql
+pip install mysqlclient
+-----------------------------------
+pip install awscli
+-----------------------------------
+aws configure
+*************
+*************
+us-west-2
+json
+-----------------------------------
+git --version
+git clone <repository>
+-----------------------------------
+https://github.com/fndos/webapp
+https://github.com/fndos/gateway
+https://github.com/fndos/memcached 
+https://github.com/fndos/microservice
+-----------------------------------
+python manage.py runserver 0:8000

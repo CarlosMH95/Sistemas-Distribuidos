@@ -38,3 +38,23 @@ Iniciar los 3 servidores (archivos de python):<br>
 <br>
 En el navegador entrar a la dirección localhost:9000 para ir al microservicio con cache<br>
 Si quiere solo probar  base de datos, ir a localhost:9000/justdb
+AMAZON WEB SERVICE:<br>
+○ Ingresar desde AWS console https://648683556505.signin.aws.amazon.com/console
+○ Credenciales de autenticación fuerón enviadas a sus emails.<br>
+○ En la barra de búsqueda buscar el servicio EC2<br>
+○ En el menú lateral izquierdo clic en la opción instancias<br>
+CONECTARSE VIA PUTTY<br>
+○ Abrir PUTTY
+○ En hostname poner la Public DNS (IPv4) que corresponda a la instancia a la que se quieren conectar.
+○ Buscan la seccion Data en PUTTY y ponen "ubuntu" el campo Auto-login user name
+○ Luego se van a la sección SSH submenú Auth y cargan el django-key.ppk desde el el explorador de archivos.
+○ Finalmente dan clic en open.
+ANTES DE COMENZAR<br>
+○ Ejecutar el virtualenv (No tienen que instalar nada solo ejecutar comandos de abajo).
+○ virtualenv -p python3 /tmp/djangodev
+○ . /tmp/djangodev/bin/activate
+○ Usar el comando deactivate en caso que deseen salir del virtualenv
+
+
+
+
