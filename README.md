@@ -1,18 +1,18 @@
 # SISTEMAS DISTRIBUIDOS
 <strong>IMPLEMENTACIÓN</strong>
 <br>
-○ Web frontend: 2 puntos<br>
+○ Web frontend: 2 puntos.<br>
 ○ Microservicio con uso correcto de RPC con formato binario: 6 puntos.  
-○ Acceso correcto a BD: 2 puntos<br>
+○ Acceso correcto a BD: 2 puntos.<br>
 ○ Acceso correcto a Caché, incluyendo inserciones en la caché, cuando no se
-encuentra lo que se busca: 6 puntos<br>
+encuentra lo que se busca: 6 puntos.<br>
 ○ Se ha incluido un Makefile que permite compilar el proyecto en la línea de
 comando + README que explique lo necesario para compilar/instalar el SW: 1
-punto<br>
+punto.<br>
 ○ Deployment en la nube: 5 puntos.<br>
 ○ Pruebas de rendimiento correctamente realizadas y correctamente
 documentadas (incluye el uso de una herramienta de benchmarking, o la
-implementación de scripts de prueba): 6 puntos<br>
+implementación de scripts de prueba): 6 puntos.<br>
 ○ EXTRAS: Hasta 5 puntos, dependiendo de lo implementado.<br>
 <br>
 <strong>DEPENDENCIAS</strong>
@@ -61,9 +61,9 @@ Si quiere solo probar base de datos, ir a localhost:9000/justdb<br>
 <strong>ANTES DE COMENZAR</strong>
 <br>
 ○ Ejecutar el virtualenv (No tienen que instalar nada solo ejecutar comandos de abajo).<br>
-○ virtualenv -p python3 /tmp/djangodev<br>
-○ . /tmp/djangodev/bin/activate<br>
-○ Usar el comando deactivate en caso que deseen salir del virtualenv<br>
+$ virtualenv -p python3 /tmp/djangodev<br>
+$ . /tmp/djangodev/bin/activate<br>
+○ Usar el comando <strong>deactivate</strong> en caso que deseen salir del virtualenv<br>
 <br>
 <strong>INSTANCIAS CONFIGURADAS</strong>
 <br>
@@ -80,35 +80,35 @@ Si quiere solo probar base de datos, ir a localhost:9000/justdb<br>
 <br>
 <strong>CONFIGURACIÓN DE LAS INSTANCIAS</strong>
 <br>
-○ sudo apt-get update<br>
-○ sudo apt-get install virtualenv<br>
-○ virtualenv -p python3 /tmp/djangodev<br>
-○ . /tmp/djangodev/bin/activate<br>
-○ pip install django<br>
-○ pip install django-memcached<br>
-○ pip install django-cors-headers<br>
-○ pip install django-bootstrap-themes<br>
-○ pip install requests<br>
-○ pip install grpcio<br>
-○ pip install grpcio-tools<br>
-○ pip install protobuf<br>
-○ pip install python-memcached<br>
-○ deactivate<br>
-○ sudo apt-get install mysql-server<br>
-○ sudo apt-get install libmysqlclient-dev<br>
-○ sudo apt-get install python3-pip<br>
-○ sudo pip3 install mysqlclient<br>
-○ . /tmp/djangodev/bin/activate<br>
-○ pip install pymysql<br>
-○ pip install mysqlclient<br>
-○ pip install awscli<br>
-○ aws configure<br>
-○ Access key ID: *********************<br>
-○ Secret access key: ************************<br>
-○ us-west-2<br>
-○ json<br>
-○ git --version<br>
-○ git clone <repository><br>
+$ sudo apt-get update<br>
+$ sudo apt-get install virtualenv<br>
+$ virtualenv -p python3 /tmp/djangodev<br>
+$ . /tmp/djangodev/bin/activate<br>
+$ pip install django<br>
+$ pip install django-memcached<br>
+$ pip install django-cors-headers<br>
+$ pip install django-bootstrap-themes<br>
+$ pip install requests<br>
+$ pip install grpcio<br>
+$ pip install grpcio-tools<br>
+$ pip install protobuf<br>
+$ pip install python-memcached<br>
+$ deactivate<br>
+$ sudo apt-get install mysql-server<br>
+$ sudo apt-get install libmysqlclient-dev<br>
+$ sudo apt-get install python3-pip<br>
+$ sudo pip3 install mysqlclient<br>
+$ . /tmp/djangodev/bin/activate<br>
+$ pip install pymysql<br>
+$ pip install mysqlclient<br>
+$ pip install awscli<br>
+$ aws configure<br>
+$ Access key ID: *********************<br>
+$ Secret access key: ************************<br>
+$ us-west-2<br>
+$ json<br>
+$ git --version<br>
+$ git clone (repository)<br>
 
 
 
