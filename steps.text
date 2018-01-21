@@ -43,4 +43,4 @@ https://github.com/fndos/gateway
 https://github.com/fndos/memcached 
 https://github.com/fndos/microservice
 -----------------------------------
-python manage.py runserver 0:8000
+python manage.py runserver 172.31.34.84:8000
