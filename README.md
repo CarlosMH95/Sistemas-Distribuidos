@@ -2,7 +2,7 @@
 <strong>IMPLEMENTACIÓN</strong>
 <br>
 ○ Web frontend: 2 puntos<br>
-○ Microservicio con uso correcto de RPC con formato binario: 6 puntos<br>  
+○ Microservicio con uso correcto de RPC con formato binario: 6 puntos.  
 ○ Acceso correcto a BD: 2 puntos<br>
 ○ Acceso correcto a Caché, incluyendo inserciones en la caché, cuando no se
 encuentra lo que se busca: 6 puntos<br>
@@ -67,13 +67,13 @@ Si quiere solo probar base de datos, ir a localhost:9000/justdb<br>
 <br>
 <strong>INSTANCIAS CONFIGURADAS</strong>
 <br>
-○ django-webapp <aplicacion web><br>
-○ django-gateway <reverse proxy><br>
-○ django-microservice <microservicio db><br>
-○ django-memcached <microservicio con memcached><br>
-○ django-db <base de datos><br>
+○ django-webapp (aplicación web)<br>
+○ django-gateway (reverse proxy)<br>
+○ django-microservice (microservicio db)<br>
+○ django-memcached (microservicio con memcached)<br>
+○ django-db (base de datos)<br>
 <br>
-<strong>INSTANCIA: DJANGO WEBAPP</strong>
+<strong>DJANGO WEBAPP</strong>
 <br>
 ○ Ubicarse en el directorio webapp<br>
 ○ python manage.py runserver 172.31.34.84:8000<br>
