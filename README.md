@@ -61,8 +61,8 @@ Si quiere solo probar base de datos, ir a localhost:9000/justdb<br>
 <strong>ANTES DE COMENZAR</strong>
 <br>
 ○ Ejecutar el virtualenv (No tienen que instalar nada solo ejecutar comandos de abajo).<br>
-$  virtualenv -p python3 /tmp/djangodev<br>
-$  . /tmp/djangodev/bin/activate<br>
+$ virtualenv -p python3 /tmp/djangodev<br>
+$ . /tmp/djangodev/bin/activate<br>
 ○ Usar el comando <strong>deactivate</strong> en caso que deseen salir del virtualenv<br>
 <br>
 <strong>INSTANCIAS CONFIGURADAS</strong>
@@ -80,35 +80,35 @@ $  . /tmp/djangodev/bin/activate<br>
 <br>
 <strong>CONFIGURACIÓN DE LAS INSTANCIAS</strong>
 <br>
-$  sudo apt-get update<br>
-$  sudo apt-get install virtualenv<br>
-$  virtualenv -p python3 /tmp/djangodev<br>
-$  . /tmp/djangodev/bin/activate<br>
-$  pip install django<br>
-$  pip install django-memcached<br>
-$  pip install django-cors-headers<br>
-$  pip install django-bootstrap-themes<br>
-$  pip install requests<br>
-$  pip install grpcio<br>
-$  pip install grpcio-tools<br>
-$  pip install protobuf<br>
-$  pip install python-memcached<br>
-$  deactivate<br>
-$  sudo apt-get install mysql-server<br>
-$  sudo apt-get install libmysqlclient-dev<br>
-$  sudo apt-get install python3-pip<br>
-$  sudo pip3 install mysqlclient<br>
-$  . /tmp/djangodev/bin/activate<br>
-$  pip install pymysql<br>
-$  pip install mysqlclient<br>
-$  pip install awscli<br>
-$  aws configure<br>
-$  Access key ID: *********************<br>
-$  Secret access key: ************************<br>
-$  us-west-2<br>
-$  json<br>
-$  git --version<br>
-$  git clone (repository)<br>
+$ sudo apt-get update<br>
+$ sudo apt-get install virtualenv<br>
+$ virtualenv -p python3 /tmp/djangodev<br>
+$ . /tmp/djangodev/bin/activate<br>
+$ pip install django<br>
+$ pip install django-memcached<br>
+$ pip install django-cors-headers<br>
+$ pip install django-bootstrap-themes<br>
+$ pip install requests<br>
+$ pip install grpcio<br>
+$ pip install grpcio-tools<br>
+$ pip install protobuf<br>
+$ pip install python-memcached<br>
+$ deactivate<br>
+$ sudo apt-get install mysql-server<br>
+$ sudo apt-get install libmysqlclient-dev<br>
+$ sudo apt-get install python3-pip<br>
+$ sudo pip3 install mysqlclient<br>
+$ . /tmp/djangodev/bin/activate<br>
+$ pip install pymysql<br>
+$ pip install mysqlclient<br>
+$ pip install awscli<br>
+$ aws configure<br>
+$ (access key ID)<br>
+$ (secret access key)<br>
+$ us-west-2<br>
+$ json<br>
+$ git --version<br>
+$ git clone (repository)<br>
 
 
 
