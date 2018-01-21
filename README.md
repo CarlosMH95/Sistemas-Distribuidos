@@ -38,7 +38,7 @@ Iniciar los 3 servidores (archivos de python):<br>
 <br>
 En el navegador entrar a la dirección localhost:9000 para ir al microservicio con cache<br>
 Si quiere solo probar  base de datos, ir a localhost:9000/justdb
-AMAZON WEB SERVICE:<br>
+<br><strong>AMAZON WEB SERVICE</strong><br>
 ○ Ingresar desde AWS console https://648683556505.signin.aws.amazon.com/console
 ○ Credenciales de autenticación fuerón enviadas a sus emails.<br>
 ○ En la barra de búsqueda buscar el servicio EC2<br>
