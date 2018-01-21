@@ -2,8 +2,8 @@
 <strong>IMPLEMENTACIÓN</strong>
 <br>
 ○ Web frontend: 2 puntos<br>
-○ Microservicio con uso correcto de RPC con formato binario: 6 puntos   <br>  
-○ Acceso correcto a BD: 2 puntos <br>
+○ Microservicio con uso correcto de RPC con formato binario: 6 puntos<br>  
+○ Acceso correcto a BD: 2 puntos<br>
 ○ Acceso correcto a Caché, incluyendo inserciones en la caché, cuando no se
 encuentra lo que se busca: 6 puntos<br>
 ○ Se ha incluido un Makefile que permite compilar el proyecto en la línea de
@@ -42,12 +42,14 @@ Iniciar los 3 servidores (archivos de python):<br>
 <br>
 En el navegador entrar a la dirección localhost:9000 para ir al microservicio con cache<br>
 Si quiere solo probar base de datos, ir a localhost:9000/justdb<br>
+<br>
 <strong>AMAZON WEB SERVICE</strong>
 <br>
 ○ Ingresar desde AWS console https://648683556505.signin.aws.amazon.com/console<br>
 ○ Credenciales de autenticación<br>
 ○ Buscar el servicio <strong>EC2</strong><br>
-○ Seleccionar la opción <strong>instancias<strong><br>
+○ Seleccionar la opción <strong>instancias</strong><br>
+<br>
 <strong>CONECTARSE VIA PUTTY</strong>
 <br>
 ○ Abrir PUTTY<br>
