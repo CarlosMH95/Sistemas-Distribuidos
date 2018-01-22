@@ -1,0 +1,16 @@
+sudo apt-get update
+sudo apt-get install virtualenv -y
+sudo apt-get install nginx -y
+sudo apt-get install git -y
+virtualenv -p python3 /tmp/djangodev
+./tmp/djangodev/bin/activate
+pip install django
+pip install django-memcached
+pip install django-cors-headers
+pip install django-bootstrap-themes
+pip install gunicorn
+pip install requests
+pip install awscli
+git --version
+git clone https://github.com/CarlosMH95/Sistemas-Distribuidos.git
+cd Sistemas-Distribuidos/webapp
