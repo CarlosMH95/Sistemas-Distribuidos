@@ -1,0 +1,15 @@
+sudo apt-get update
+sudo apt-get install python3 -y
+sudo apt-get install virtualenv -y
+sudo apt-get install git -y
+virtualenv -p python3 /tmp/djangodev
+./tmp/djangodev/bin/activate
+pip install requests
+pip install grpcio
+pip install grpcio-tools
+pip install protobuf
+pip install pymysql
+pip install mysqlclient
+pip install awscli
+git clone https://github.com/CarlosMH95/Sistemas-Distribuidos.git
+cd Sistemas-Distribuidos
