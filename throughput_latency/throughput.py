@@ -2,8 +2,8 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 data = {}
-data['Just DB'] = [6.1, 5.9, 6, 6.2, 6.1, 6, 5.89, 5.9, 5.9, 5.9]
-data['Memcached +DB'] = [9.7, 19.8, 28.1, 39.9, 48.4, 56.3, 50.7, 24.4, 83.7, 84.17]
+data['Just DB'] = [6.1, 6.3, 6.2, 6.1, 5.7, 6.1, 6.3, 6.7, 5.3, 5.5]
+data['Memcached +DB'] = [70.9, 75.6, 84, 90, 58.7, 91.8, 68.4, 96.4, 74.6, 88]
 
 color_dict = {'Just DB':'white', 'Memcached +DB':'white'}
 controls = ['Just DB', 'Memcached +DB']
